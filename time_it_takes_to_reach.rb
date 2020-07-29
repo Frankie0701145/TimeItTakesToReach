@@ -53,8 +53,10 @@ class TimeItWillTakeToReach
     end
 end
 
-
+#Example
 TimeItWillTakeToReach.time_it_will_take_hours(track_a_speed:"70 Km/h" , track_b_speed:"120 Km/h", track_a_departure_time:"8:00am", track_b_departure_time:"8:30am")
+
+TimeItWillTakeToReach.time_it_will_take_hours track_a_speed:"30 m/s" , track_b_speed:"50 m/s", track_a_departure_time:"8:00am", track_b_departure_time:"8:30am"  
 
 
 

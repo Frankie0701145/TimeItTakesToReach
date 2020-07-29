@@ -34,7 +34,11 @@ class TestingTimeItTakeToReach < Test::Unit::TestCase
         time_it_will_take = TimeItWillTakeToReach.time_it_will_take_hours track_a_speed:"80 km/h" , 
                                                                      track_b_speed:"120 km/h", track_a_departure_time:"8:00am", 
                                                                       track_b_departure_time:"8:30am"
-        assert_equal 1,time_it_will_take                                                              
+        assert_equal 1,time_it_will_take        
+        time_it_will_take = TimeItWillTakeToReach.time_it_will_take_hours track_a_speed:"30 m/s" , 
+                                                                            track_b_speed:"50 m/s", track_a_departure_time:"8:00am", 
+                                                                            track_b_departure_time:"8:30am"   
+        assert_equal 0.75, time_it_will_take                                                                                                                   
     end
 
     def test_convert_to_km_h
